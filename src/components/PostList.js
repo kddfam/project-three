@@ -10,7 +10,6 @@ class PostList extends Component {
     }
 
     renderPosts() {
-        console.log(this.props.posts);
         return this.props.posts.map(post => {
             return <Post title={post.title} body={post.body} key={post.id} userId={post.userId} />
         })
